@@ -1,0 +1,31 @@
+.nav-links {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+.nav-links::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links:hover::after {
+  width: 100%;
+  left: 50%;
+}
+
+.nav-links.text-white {
+  color: white;
+}
+
+.nav-links.text-black {
+  color: black;
+}
