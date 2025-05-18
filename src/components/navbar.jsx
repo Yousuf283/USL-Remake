@@ -104,7 +104,7 @@ export default function Navbar() {
                     <a href="/" className="nav-links p-2 text-white">
                         MATCHES
                     </a>
-                    <a href="/" className="nav-links p-2 text-white">
+                    <a href="/" className="usl-cup-link nav-links p-2 text-white">
                         2024 USL CUP
                     </a>
                     <a href="/" className="nav-links p-2 text-white">

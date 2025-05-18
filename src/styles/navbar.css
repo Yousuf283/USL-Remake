@@ -29,3 +29,37 @@
 .nav-links.text-black {
   color: black;
 }
+
+@keyframes colorBlinkWhite {
+
+  0%,
+  100% {
+    color: #ffbd33;
+  }
+
+  50% {
+    color: white;
+  }
+}
+
+@keyframes colorBlinkBlack {
+
+  0%,
+  100% {
+    color: #ffbd33;
+  }
+
+  50% {
+    color: black;
+  }
+}
+
+.usl-cup-link.text-white {
+  animation:
+    colorBlinkWhite 4s linear infinite,
+}
+
+.usl-cup-link.text-black {
+  animation:
+    colorBlinkBlack 4s linear infinite,
+}
