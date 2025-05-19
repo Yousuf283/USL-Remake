@@ -3,20 +3,18 @@ import Footer from '../../components/footer';
 
 export default function sign_up() {
     return (
-        <div>
-            <Navbar/>
-            {/* Hero Section */}
-            <div className="relative w-full h-screen bg-[url('/backdrops/main_backdrop.jpg')] bg-cover bg-no-repeat bg-center">
-                {/* Blur overlay */}
-                <div className="absolute inset-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-xs z-0" />
-                {/* Main content */}
-                <div className="absolute inset-0 flex items-center justify-center z-10">
-                    <h1 className="text-center text-white text-4xl font-bold px-4 sm:text-5xl md:text-6xl lg:text-8xl">
-                        Sign Up
-                    </h1>
+        <div className="fixed inset-0 bg-[url('/backdrops/main_backdrop.jpg')] bg-cover bg-no-repeat bg-center z-[-1]">
+            {/* Background layer stays fixed */}
+            <div className="absolute inset-0 bg-[rgba(255,255,255,0.1)] backdrop-blur-xs z-0" />
+
+            {/* Scrollable content */}
+            <div className="relative z-10 h-screen overflow-y-scroll">
+                <Navbar />
+                <div className="min-h-screen p-4 mt-30">
+                   
                 </div>
+                <Footer />
             </div>
-            <Footer />
         </div>
     );
 }
